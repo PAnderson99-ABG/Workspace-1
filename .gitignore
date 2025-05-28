@@ -1,0 +1,20 @@
+# Ignore all `.venv` folders in any directory (virtual environments)
+**/.venv/
+
+# Ignore all `.env` folders in any directory (used for environment variables)
+**/.env
+
+# Ignore all `__pycache__` folders in any directory (Python bytecode cache)
+**/__pycache__/
+
+# Ignore compiled Python files (.pyc, .pyo, .pyd)
+*.py[cod]
+
+# Ignore MSAL token cache files, regardless of directory (OAuth tokens)
+**/msal_token_cache.json
+
+# Ignore the Virtual_Pet project directory completely
+Virtual_Pet/
+
+# Ignore all Excel files
+*.xlsx
