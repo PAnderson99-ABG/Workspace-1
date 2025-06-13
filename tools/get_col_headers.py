@@ -8,7 +8,7 @@ load_dotenv()
 ACCESS_TOKEN = os.getenv("SMARTSHEET_API_TOKEN")
 
 # === SETUP ===
-SHEET_ID = 1506856807649156
+SHEET_ID = 2708248473849732
 OUTPUT_CSV = "C:/Users/panderson/OneDrive - American Bath Group/Documents/Reports/column_headers.csv"
 
 # === INITIALIZE CLIENT ===
