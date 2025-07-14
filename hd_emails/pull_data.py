@@ -17,7 +17,7 @@ smartsheet_client.errors_as_exceptions(True)
 # === CONFIGURATION ===
 SHEET_ID = int(os.getenv("PCM_REQUESTS_ID"))
 DEALER_COLUMN_NAME = "Dealer"
-EXPORT_FOLDER = r"C:/Users/panderson/OneDrive - American Bath Group/Documents/Reports"
+EXPORT_FOLDER = r"C:/Users/panderson/OneDrive - American Bath Group/Documents/Paul_Anderson/Reports"
 ANDIE_EMAILS = {os.getenv("ANDIE_EMAIL").lower()}
 BRIANNA_EMAILS = {os.getenv("BRIANNA_EMAIL").lower()}
 WATCH_EMAILS = ANDIE_EMAILS.union(BRIANNA_EMAILS)

@@ -4,7 +4,7 @@ from pathlib import Path
 
 # === Configuration ===
 scripts_dir = Path(__file__).resolve().parent
-reports_dir = Path(r"C:/Users/panderson/OneDrive - American Bath Group/Documents/Reports")
+reports_dir = Path(r"C:/Users/panderson/OneDrive - American Bath Group/Documents/Paul_Anderson/Reports")
 html_template_path = scripts_dir / "email_body.html"
 email_script_path = scripts_dir / "send_email.py"
 

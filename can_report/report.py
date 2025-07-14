@@ -63,7 +63,7 @@ df_processing = get_filtered_df(PCM_PROCESSING_ID, "PCM Processing")
 df_requests = get_filtered_df(PCM_REQUESTS_ID, "PCM Requests")
 
 # === COMBINE AND EXPORT TO EXCEL (SEPARATE TABS) ===
-output_path = "C:/Users/panderson/OneDrive - American Bath Group/Documents/Reports/CAN-open-projects.xlsx"
+output_path = "C:/Users/panderson/OneDrive - American Bath Group/Documents/Paul_Anderson/Reports/CAN-open-projects.xlsx"
 
 with pd.ExcelWriter(output_path, engine="openpyxl") as writer:
     for sheet_name, df in [("PCM Processing", df_processing), ("Digital Commerce", df_requests)]:

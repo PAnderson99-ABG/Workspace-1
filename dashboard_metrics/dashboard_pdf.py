@@ -9,7 +9,7 @@ load_dotenv()
 EMAIL = os.getenv("SMartsheet_EMAIL").strip("'")
 PASSWORD = os.getenv("SMartsheet_PASSWORD").strip("'")
 DASHBOARD_URL = os.getenv("SKU_DASHBOARD").strip("'")
-OUTPUT_PATH = r"C:/Users/panderson/OneDrive - American Bath Group/Documents/Reports/dashboard.pdf"
+OUTPUT_PATH = r"C:/Users/panderson/OneDrive - American Bath Group/Documents/Paul_Anderson/Reports/dashboard.pdf"
 
 async def save_dashboard_pdf():
     async with async_playwright() as p:

@@ -15,7 +15,7 @@ smartsheet_client.errors_as_exceptions(True)
 
 # === Sheet Configuration ===
 SHEET_ID = int(os.getenv("MDM_DC_TRACKER"))  # From .env
-EXPORT_FOLDER = r"C:/Users/panderson/OneDrive - American Bath Group/Documents/Reports"
+EXPORT_FOLDER = r"C:/Users/panderson/OneDrive - American Bath Group/Documents/Paul_Anderson/Reports"
 
 # === Date Setup ===
 now = datetime.now()

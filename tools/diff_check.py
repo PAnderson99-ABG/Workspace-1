@@ -101,7 +101,7 @@ def main():
     output_filename = f"diff_check.xlsx"
 
     # Hardcoded output path
-    reports_folder = r"C:/Users/panderson/OneDrive - American Bath Group/Documents/Reports"
+    reports_folder = r"C:/Users/panderson/OneDrive - American Bath Group/Documents/Paul_Anderson/Reports"
     os.makedirs(reports_folder, exist_ok=True)
     output_path = os.path.join(reports_folder, output_filename)
 

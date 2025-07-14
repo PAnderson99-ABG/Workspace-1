@@ -166,8 +166,8 @@ def send_email(subject, body_html, recipients, attachments=None):
 # === Run the email preparation process ===
 if __name__ == "__main__":
     metric_files = [
-        r"C:/Users/panderson/OneDrive - American Bath Group/Documents/Reports/PCM_Metrics.txt",
-        r"C:/Users/panderson/OneDrive - American Bath Group/Documents/Reports/MDM_DC_Metrics.txt"
+        r"C:/Users/panderson/OneDrive - American Bath Group/Documents/Paul_Anderson/Reports/PCM_Metrics.txt",
+        r"C:/Users/panderson/OneDrive - American Bath Group/Documents/Paul_Anderson/Reports/MDM_DC_Metrics.txt"
     ]
 
     metrics = parse_metrics_txt(metric_files)

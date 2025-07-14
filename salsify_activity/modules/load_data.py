@@ -13,13 +13,13 @@ def load_and_prepare(path, label, skip_header=False):
 
 def load_data():
     load_dotenv()
-    paths = {k: os.getenv(k) for k in ["WCWQ1P1", "WCWQ1P2", "WCWQ2P1", "WCWQ2P2"]}
+    paths = {k: os.getenv(k) for k in ["WCWQ1P1", "WCWQ1P2", "WCWQ2P1", "WCWQ2P2", "WCWQ3P1", "WCWQ3P2"]}
     
     for k, path in paths.items():
         if not path or not os.path.exists(path):
             raise FileNotFoundError(f"Missing or invalid path for {k}: {path}")
 
-    dfs = {label: load_and_prepare(path, label) for label, path in zip(["Q1P1", "Q1P2", "Q2P1", "Q2P2"], paths.values())}
+    dfs = {label: load_and_prepare(path, label) for label, path in zip(["Q1P1", "Q1P2", "Q2P1", "Q2P2", "Q3P1", "Q3P2"], paths.values())}
 
     for label, df in dfs.items():
         if "timestamp" not in df.columns:

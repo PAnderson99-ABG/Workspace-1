@@ -4,9 +4,8 @@ from .charts import insert_summary_chart, insert_changes_over_time_sheet
 from .write_helpers import write_breakdown_table, autofit_columns
 from .monthly_breakdown import generate_monthly_brand_breakdowns
 
-def build_excel_report(df, top_fields, all_users, top_brands, brand_user_df, property_user_df):
-    output_file = "report.xlsx"
-    with pd.ExcelWriter(output_file, engine="xlsxwriter") as writer:
+def build_excel_report(df, top_fields, all_users, top_brands, brand_user_df, property_user_df, output_filename="report.xlsx", brand_name=None):
+    with pd.ExcelWriter(output_filename, engine="xlsxwriter") as writer:
 
         # 1. Changes Over Time
         insert_changes_over_time_sheet(writer, df)
@@ -27,7 +26,6 @@ def build_excel_report(df, top_fields, all_users, top_brands, brand_user_df, pro
         # 4. Brand_User_Breakdown
         brand_ws = writer.book.add_worksheet("Brand_User_Breakdown")
         write_breakdown_table(brand_ws, brand_user_df, "brand")
-        # Optional: autofit skipped here since it's manually written
 
         # 5. Top Properties
         top_fields.to_excel(writer, sheet_name="Top Properties", index=False)
@@ -36,10 +34,9 @@ def build_excel_report(df, top_fields, all_users, top_brands, brand_user_df, pro
         # 6. Property_User_Breakdown
         property_ws = writer.book.add_worksheet("Property_User_Breakdown")
         write_breakdown_table(property_ws, property_user_df, "property_name")
-        # Optional: autofit skipped here too
 
         # 7. Monthly breakdowns (adds sheets and charts)
-        generate_monthly_brand_breakdowns(df, writer)
+        generate_monthly_brand_breakdowns(df, writer, brand_name=brand_name)
 
         # Insert summary charts
         wb = writer.book
@@ -47,6 +44,7 @@ def build_excel_report(df, top_fields, all_users, top_brands, brand_user_df, pro
         insert_summary_chart(wb, writer.sheets["All Users"], "Top 10 Users by Changes", 0, 1, min(10, len(all_users)))
         insert_summary_chart(wb, writer.sheets["Top Brands"], "Top 50 Brands Changed", 0, 1, len(top_brands))
 
+        # Hide raw data sheets
         for sheet_name in [
             "All Users",
             "Top Brands",
@@ -57,5 +55,4 @@ def build_excel_report(df, top_fields, all_users, top_brands, brand_user_df, pro
             if sheet_name in writer.sheets:
                 writer.sheets[sheet_name].hidden = True
 
-
-    print("✅ Excel report generated: report.xlsx")
+    print(f"✅ Excel report generated: {output_filename}")

@@ -14,7 +14,7 @@ ACCESS_TOKEN = os.getenv("SMARTSHEET_API_TOKEN")
 
 # === CONFIG ===
 OPTIONS_FILE = "Master_Data_Sheets.csv"
-OUTPUT_XLSX = "C:/Users/panderson/OneDrive - American Bath Group/Documents/Reports/column_headers.xlsx"
+OUTPUT_XLSX = "C:/Users/panderson/OneDrive - American Bath Group/Documents/Paul_Anderson/Reports/column_headers.xlsx"
 
 # === LOAD SHEET OPTIONS ===
 sheet_choices = []

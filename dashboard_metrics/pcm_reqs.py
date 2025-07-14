@@ -15,7 +15,7 @@ smartsheet_client.errors_as_exceptions(True)
 
 # === Configuration ===
 SHEET_ID = int(os.getenv("PCM_REQUESTS_ID"))
-EXPORT_FOLDER = r"C:/Users/panderson/OneDrive - American Bath Group/Documents/Reports"
+EXPORT_FOLDER = r"C:/Users/panderson/OneDrive - American Bath Group/Documents/Paul_Anderson/Reports"
 
 # === Date Range for Current Month ===
 now = datetime.now()

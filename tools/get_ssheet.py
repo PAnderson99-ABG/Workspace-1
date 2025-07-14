@@ -9,7 +9,7 @@ ACCESS_TOKEN = os.getenv("SMARTSHEET_API_TOKEN")
 
 # === SETUP ===
 SHEET_ID = 3657436246265732
-OUTPUT_CSV = "C:/Users/panderson/OneDrive - American Bath Group/Documents/Reports/sheet_data.csv"
+OUTPUT_CSV = "C:/Users/panderson/OneDrive - American Bath Group/Documents/Paul_Anderson/Reports/sheet_data.csv"
 
 # === INITIALIZE CLIENT ===
 smartsheet_client = smartsheet.Smartsheet(ACCESS_TOKEN)

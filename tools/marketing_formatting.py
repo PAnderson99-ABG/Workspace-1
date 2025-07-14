@@ -3,7 +3,7 @@ from tkinter import Tk, filedialog
 from marketing_cols import COLUMNS  # ← Column list is now imported
 
 # === CONFIGURATION ===
-OUTPUT_PATH = "C:/Users/panderson/OneDrive - American Bath Group/Documents/Reports/marketing-output.xlsx"
+OUTPUT_PATH = "C:/Users/panderson/OneDrive - American Bath Group/Documents/Paul_Anderson/Reports/marketing-output.xlsx"
 
 # === FILE PICKER UTILITY ===
 def select_file(prompt):

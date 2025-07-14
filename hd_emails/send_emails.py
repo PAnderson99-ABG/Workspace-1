@@ -25,7 +25,7 @@ The only recipient is panderson@americanbathgroup.com.
 4
 5"""
 
-ATTACHMENT_PATH = r"C:/Users/panderson/OneDrive - American Bath Group/Documents/Reports/TEST_2025-05-15.xlsx"
+ATTACHMENT_PATH = r"C:/Users/panderson/OneDrive - American Bath Group/Documents/Paul_Anderson/Reports/TEST_2025-05-15.xlsx"
 
 # === TOKEN CACHE SETUP ===
 cache = SerializableTokenCache()
