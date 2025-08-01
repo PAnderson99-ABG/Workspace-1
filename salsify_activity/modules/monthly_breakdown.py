@@ -8,7 +8,8 @@ PIM_TEAM = {
     "panderson@americanbathgroup.com",
     "rclough@americanbathgroup.com",
     "lmasterson@americanbathgroup.com",
-    "ktubbs@americanbathgroup.com"
+    "ktubbs@americanbathgroup.com",
+    "mwaxman@americanbathgroup.com"
 }
 
 DREAMLINE_TEAM = {
@@ -53,7 +54,8 @@ MAAX_TEAM = {
     "sdoyle@americanbathgroup.com",
     "sbeauregard@neptuneb.com",
     "rdayyani@americanbathgroup.com",
-    "tboulanger@americanbathgroup.com"
+    "tboulanger@americanbathgroup.com",
+    "marie-helene.dumont@maax.com"
 }
 
 GROUP_ORDER = ["PIM Team", "Dreamline Team", "MAAX Team", "Other"]
